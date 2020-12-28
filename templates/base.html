@@ -23,10 +23,10 @@
             </div>
             <div class="col-6 text-right">
               {% if user.is_authenticated %}
-                <p class="pt-3"><strong>{{ user.username }}</strong> | <a href="{% url 'logout' %}">Log out</a>.</p>
+                <p class="pt-3"><strong>{{ user.username }}</strong> | <a href="{% url 'account_logout' %}">Log out</a>.</p>
               {% else %}
-                <a href="{% url 'login' %}" class="btn btn-light" role="button">Log in</a>
-                <a href="{% url 'signup' %}" class="btn btn-primary" role="button">Sign up</a>
+                <a href="{% url 'account_login' %}" class="btn btn-light" role="button">Log in</a>
+                <a href="{% url 'account_signup' %}" class="btn btn-primary" role="button">Sign up</a>
               {% endif %}
             </div>
           </div>
