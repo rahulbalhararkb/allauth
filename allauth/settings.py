@@ -25,7 +25,7 @@ SECRET_KEY = 'bwfk^8t0omgcf-441130n5lu*0jck163h4rl42-og3t6)_qops'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'allauth.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'media/db.sqlite3',
     }
 }
 
