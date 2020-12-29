@@ -1,7 +1,7 @@
 from django.urls import include, path
 
-from .views import home
+from .views import Profile
 
 urlpatterns = [
-    path('', home, name='home'),
+path('', Profile.as_view(), name='home'),
 ]
